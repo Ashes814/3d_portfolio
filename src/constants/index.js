@@ -19,10 +19,10 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  ominifood,
+  pigGame,
   threejs,
+  guessingNumber,
 } from "../assets";
 
 export const navLinks = [
@@ -42,15 +42,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "WebGIS Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Geoserver Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Spatial Data Scientist",
     icon: backend,
   },
   {
@@ -116,37 +116,27 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Msc in Geographic Information Science",
+    company_name: "POLYU",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "September 2023 - August 2024",
+    points: ["1"],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Research Assistant of Geography",
+    company_name: "Shanghai Normal University",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "March 2022 - August 2023",
+    points: ["Research on Environmatal Science", "2", "3", "4"],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Geographic Data Analyst",
+    company_name: "Urban Science",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "September 2021 - Feburary 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,17 +145,12 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Bsc in Geography (Normal)",
+    company_name: "Shanghai Normal University",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "September 2017 - August 2021",
+    points: ["National Scholarship", "rank 1", "MCM", "Participating in c"],
   },
 ];
 
@@ -198,67 +183,61 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "Omnifood Website",
+    description: "A Modern Omnifood Static Webasite with HTML5 and CSS3",
     tags: [
       {
-        name: "react",
+        name: "HTML5",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "CSS3",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ominifood,
+    source_code_link: "https://zowomnifood.netlify.app",
   },
   {
-    name: "Job IT",
+    name: "Guessing Number Game",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A simple Number Guessing App with basic HTML5, CSS3 and JavaScript",
     tags: [
       {
-        name: "react",
+        name: "HTML5",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "CSS3",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: guessingNumber,
+    source_code_link: "https://oo-guessing-number.netlify.app",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "Pig Game",
+    description: "A pig game for two players, built with basic Javascript",
     tags: [
       {
-        name: "nextjs",
+        name: "HTML5",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "CSS3",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: pigGame,
+    source_code_link: "https://oo-piggame.netlify.app",
   },
 ];
 

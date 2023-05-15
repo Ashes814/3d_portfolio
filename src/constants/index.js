@@ -42,20 +42,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: "WebGIS Developer",
+    title: "WeChat Official Account",
     icon: web,
+    link: "https://www.baidu.com/",
   },
   {
-    title: "Geoserver Developer",
+    title: "Notion Blog",
     icon: mobile,
+    link: "https://ouwen-z.notion.site/OOBlogs-8e03d2f8db714a82aafad8577e11f1df",
   },
   {
-    title: "Spatial Data Scientist",
+    title: "GitHub Repo",
     icon: backend,
+    link: "https://github.com/Ashes814",
   },
   {
     title: "Content Creator",
     icon: creator,
+    link: "https://www.baidu.com/",
   },
 ];
 

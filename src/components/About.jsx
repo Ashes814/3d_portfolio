@@ -6,14 +6,16 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, title, icon, link }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full blue-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
-        <div
+        <a
+          href={link}
+          target={"_blank"}
           options={{
             max: 45,
             scale: 1,
@@ -25,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => {
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
-        </div>
+        </a>
       </motion.div>
     </Tilt>
   );
@@ -43,16 +45,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis
-        libero, quaerat ipsa quae cumque suscipit excepturi! Quae harum sequi
-        soluta aliquam molestiae non rem, officiis aliquid, corrupti totam
-        dolore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-        nobis libero, quaerat ipsa quae cumque suscipit excepturi! Quae harum
-        sequi soluta aliquam molestiae non rem, officiis aliquid, corrupti totam
-        dolore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-        nobis libero, quaerat ipsa quae cumque suscipit excepturi! Quae harum
-        sequi soluta aliquam molestiae non rem, officiis aliquid, corrupti totam
-        dolore?
+        Thanks for visiting my portofolio. I am a GIS developer Sometime I write
+        blog to show my project ideas and coding experiences. You can find my
+        blog in my Notion Web and Wechat Official Account. Links are shown
+        below.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

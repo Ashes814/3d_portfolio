@@ -20,6 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.png";
+import pgsql from "./tech/pgsql.png";
+import oplayer from "./tech/oplayer.png";
+import cesium from "./tech/cesium.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -52,6 +56,10 @@ export {
   tailwind,
   typescript,
   threejs,
+  java,
+  pgsql,
+  oplayer,
+  cesium,
   meta,
   shopify,
   starbucks,

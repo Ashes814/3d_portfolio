@@ -22,6 +22,10 @@ import {
   ominifood,
   pigGame,
   threejs,
+  java,
+  pgsql,
+  oplayer,
+  cesium,
   guessingNumber,
 } from "../assets";
 
@@ -88,14 +92,7 @@ const technologies = [
     name: "Redux Toolkit",
     icon: redux,
   },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+
   {
     name: "MongoDB",
     icon: mongodb,
@@ -108,13 +105,22 @@ const technologies = [
     name: "git",
     icon: git,
   },
+
   {
-    name: "figma",
-    icon: figma,
+    name: "java",
+    icon: java,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "pgsql",
+    icon: pgsql,
+  },
+  {
+    name: "oplayer",
+    icon: oplayer,
+  },
+  {
+    name: "cesium",
+    icon: cesium,
   },
 ];
 
@@ -164,7 +170,7 @@ const testimonials = [
       "Predicting sludge generation patterns and carbon reduction potential under Shared Socioeconomic Pathways",
     name: "First Author",
     journal:
-      "Journal of Environmental Management [中科院1区Top, JCR Q1, Cite Score: 11.4]",
+      "Journal of Environmental Management (中科院1区Top | JCR Q1 | Cite Score: 11.4)",
     id: "1",
     link: "https://doi.org/10.1016/j.jenvman.2022.116088",
   },
@@ -173,7 +179,7 @@ const testimonials = [
       "Identifying multiple stakeholders' roles and network in urban waste separation management-a case study in Xiamen, China",
     name: "Other Author",
     journal:
-      "Journal of Cleaner Production [中科院1区Top, JCR Q1, Cite Score: 15.8]",
+      "Journal of Cleaner Production (中科院1区Top | JCR Q1 | Cite Score: 15.8)",
     id: "2",
     link: "https://doi.org/10.1016/j.jclepro.2020.123569",
   },
@@ -181,7 +187,7 @@ const testimonials = [
     testimonial:
       "Promoting and maintaining public participation in waste separation policies — A comparative study in Shanghai, China",
     name: "Other Author",
-    journal: "Resources, Environment and Sustainability [Cite Score: 2]",
+    journal: "Resources, Environment and Sustainability (Cite Score: 2)",
     id: "3",
     link: "https://doi.org/10.1016/j.resenv.2023.100112",
   },

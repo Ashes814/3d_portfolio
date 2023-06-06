@@ -161,27 +161,29 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Predicting sludge generation patterns and carbon reduction potential under Shared Socioeconomic Pathways",
+    name: "First Author",
+    journal:
+      "Journal of Environmental Management [中科院1区Top, JCR Q1, Cite Score: 11.4]",
+    id: "1",
+    link: "https://doi.org/10.1016/j.jenvman.2022.116088",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Identifying multiple stakeholders' roles and network in urban waste separation management-a case study in Xiamen, China",
+    name: "Other Author",
+    journal:
+      "Journal of Cleaner Production [中科院1区Top, JCR Q1, Cite Score: 15.8]",
+    id: "2",
+    link: "https://doi.org/10.1016/j.jclepro.2020.123569",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Promoting and maintaining public participation in waste separation policies — A comparative study in Shanghai, China",
+    name: "Other Author",
+    journal: "Resources, Environment and Sustainability [Cite Score: 2]",
+    id: "3",
+    link: "https://doi.org/10.1016/j.resenv.2023.100112",
   },
 ];
 

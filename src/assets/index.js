@@ -25,10 +25,9 @@ import pgsql from "./tech/pgsql.png";
 import oplayer from "./tech/oplayer.png";
 import cesium from "./tech/cesium.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import usc from "./company/usc.png";
+import polyu from "./company/polyu.png";
+import shnu from "./company/shnu.png";
 
 import ominifood from "./ominifood.png";
 import guessingNumber from "./guessing-number.png";
@@ -60,10 +59,9 @@ export {
   pgsql,
   oplayer,
   cesium,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  usc,
+  polyu,
+  shnu,
   ominifood,
   guessingNumber,
   pigGame,

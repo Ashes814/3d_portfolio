@@ -4,6 +4,8 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+import { staggerContainer } from "../utils/motion";
 const ProjectCard = ({
   index,
   name,
@@ -11,6 +13,9 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  namezh,
+  descriptionzh,
+  isEnglish,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -43,8 +48,12 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <h3 className="text-white font-bold text-[24px]">
+            {isEnglish ? name : namezh}
+          </h3>
+          <p className="mt-2 text-secondary text-[14px]">
+            {isEnglish ? description : descriptionzh}
+          </p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -58,12 +67,26 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Works = (props) => {
+  const { isEnglish, setIsEnglish } = props;
   return (
-    <>
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+    >
+      <span className="hash-span" id={"work"}>
+        &nbsp;
+      </span>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Projects</p>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+        <p className={styles.sectionSubText}>
+          {isEnglish ? "My Projects" : "开发作品集"}
+        </p>
+        <h2 className={styles.sectionHeadText}>
+          {isEnglish ? "Projects" : "项目展示"}
+        </h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -71,19 +94,25 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          This is MY PROJECTS GALLERY, it contains all the projects I made. Some
-          of them are homeworks of a programming course. Some of them are my
-          brain storm.
+          {isEnglish
+            ? "This is MY PROJECTS GALLERY, it contains all the projects I made. Some of them are homeworks of a programming course. Some of them are my brain storm."
+            : "此板块展示我曾参与开发的项目作品。主要来源于课程的作业以及自己的头脑风暴"}
         </motion.p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+            isEnglish={isEnglish}
+          />
         ))}
       </div>
-    </>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(Works, "");
+// export default SectionWrapper(Works, "");
+export default Works;

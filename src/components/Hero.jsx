@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-const Hero = () => {
+const Hero = (props) => {
+  const { isEnglish, setIsEnglish } = props;
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -16,13 +17,23 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#804dee]">Ouwen</span>
+            {isEnglish ? "Hi, I'm" : "嗨， 这里是"}
+            <span className="text-[#804dee]">
+              {isEnglish ? "Ouwen" : "欧欧"}
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop WebGIS App with JS/TS, React, and Cesium.{" "}
+            {isEnglish
+              ? "I develop WebGIS App with JS/TS, React, and Cesium."
+              : "我是一名WebGIS开发者，常用JS/TS，React与Cesium开发有趣的三维GIS项目，同时兼任"}
             <br className="sm:block hidden" />
-            Maintaing Database with Java. <br className="sm:block hidden" />
-            Implementing Spatial Analysis and Machine Learning with Python.
+            {isEnglish
+              ? "Maintaing Database with Java."
+              : "JAVA增删改查工程师😕"}
+            <br className="sm:block hidden" />
+            {isEnglish
+              ? "Implementing Spatial Analysis and Machine Learning with Python."
+              : "Python调包侠🥹"}
           </p>
         </div>
       </div>

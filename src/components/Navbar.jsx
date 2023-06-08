@@ -4,7 +4,8 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { isEnglish, setIsEnglish } = props;
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
@@ -24,7 +25,9 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             ZOW &nbsp;
-            <span className="sm:block hidden">| GISer with Creative</span>
+            <span className="sm:block hidden">
+              | {isEnglish ? "GISer with Creative" : "GISer 有创造力"}
+            </span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -39,10 +42,19 @@ const Navbar = () => {
                   setActive(Link.title);
                 }}
               >
-                <a href={`#${Link.id}`}>{Link.title}</a>
+                <a href={`#${Link.id}`}>
+                  {isEnglish ? Link.title : Link.titlezh}
+                </a>
               </li>
             );
           })}
+          <button
+            onClick={() => {
+              setIsEnglish(!isEnglish);
+            }}
+          >
+            中/EN
+          </button>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">

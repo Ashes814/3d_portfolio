@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { useState } from "react";
 import {
   About,
   Contact,
@@ -13,20 +14,21 @@ import {
 import "./index.css";
 
 const App = () => {
+  const [isEnglish, setIsEnglish] = useState(true);
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+          <Navbar isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+          <Hero isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
+        <About isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+        <Experience isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+        <Tech isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+        <Works isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+        <Feedbacks isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
         <div className="relative z-0">
-          <Contact />
+          <Contact isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
           <StarsCanvas />
         </div>
       </div>

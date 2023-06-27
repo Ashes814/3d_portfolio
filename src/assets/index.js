@@ -35,6 +35,9 @@ import pigGame from "./piggame.png";
 import workout from "./workout.png";
 import typhoon from "./typhoon.png";
 import bankist from "./bankist.png";
+import hambuger from "./hambuger.png";
+import smartCampus from "./smartCampus.png";
+import financial from "./financial.png";
 
 export {
   logo,
@@ -71,4 +74,7 @@ export {
   workout,
   typhoon,
   bankist,
+  hambuger,
+  smartCampus,
+  financial,
 };

@@ -35,9 +35,7 @@ const Navbar = (props) => {
             return (
               <li
                 key={Link.id}
-                className={`${
-                  active === Link.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[19px] font-medium cursor-pointer`}
+                className={`text-secondary hover:text-white text-[19px] font-medium cursor-pointer`}
                 onClick={() => {
                   setActive(Link.title);
                 }}
@@ -52,8 +50,9 @@ const Navbar = (props) => {
             onClick={() => {
               setIsEnglish(!isEnglish);
             }}
+            className={`text-secondary hover:text-white text-[19px] font-medium cursor-pointer`}
           >
-            中/EN
+            {isEnglish ? "简体中文" : "English"}
           </button>
         </ul>
 

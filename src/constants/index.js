@@ -23,6 +23,9 @@ import {
   workout,
   typhoon,
   bankist,
+  hambuger,
+  smartCampus,
+  financial,
   threejs,
   java,
   pgsql,
@@ -33,19 +36,19 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
-    titlezh: "关于",
+    id: "career",
+    title: "Career",
+    titlezh: "生涯路径",
   },
   {
     id: "work",
-    title: "Work",
-    titlezh: "工作",
+    title: "Projects",
+    titlezh: "项目作品",
   },
   {
     id: "contact",
     title: "Contact",
-    titlezh: "联络",
+    titlezh: "联系方式",
   },
 ];
 
@@ -383,8 +386,54 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: bankist,
-    source_code_link: "https://github.com/Ashes814/oo-bankist/",
+    image: hambuger,
+    source_code_link: "https://github.com/Ashes814/order-food-app",
+  },
+  {
+    name: "Gaode Smart Campus",
+    namezh: "高德智慧校园游览",
+    description:
+      "A demo for Gaode map API, adding markers and optimizing routes",
+    descriptionzh: "高德地图API示例，实现智慧校园添加标记与游览路径规划功能",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Gaode Map API",
+        color: "green-text-gradient",
+      },
+    ],
+    image: smartCampus,
+    source_code_link: "https://github.com/Ashes814/smart-campus",
+  },
+  {
+    name: "Financial Management",
+    namezh: "财务管理系统",
+    description:
+      "Financial Management System, Data Visualization, Statistics and Machien Learning",
+    descriptionzh: "财务管理系统，实现数据可视化，统计建模及机器学习预测",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: financial,
+    source_code_link: "https://github.com/Ashes814/finiancial-management",
   },
 ];
 

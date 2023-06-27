@@ -21,7 +21,7 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-testTertiary p-5 rounded-2xl sm:w-[300px] w-full"
+        className="bg-testTertiary p-5 rounded-2xl sm:w-[340px] w-full"
       >
         <div
           className="relative w-full h-[230px] cursor-pointer"
@@ -100,7 +100,7 @@ const Works = (props) => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-10">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}

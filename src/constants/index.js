@@ -20,6 +20,9 @@ import {
   usc,
   ominifood,
   pigGame,
+  workout,
+  typhoon,
+  bankist,
   threejs,
   java,
   pgsql,
@@ -254,7 +257,7 @@ const projects = [
     source_code_link: "https://zowomnifood.netlify.app",
   },
   {
-    name: "Guessing Number Game",
+    name: "Guessing Number",
     namezh: "猜数字小游戏",
     description:
       "A simple Number Guessing App with basic HTML5, CSS3 and JavaScript",
@@ -297,6 +300,91 @@ const projects = [
     ],
     image: pigGame,
     source_code_link: "https://oo-piggame.netlify.app",
+  },
+  {
+    name: "Workout App",
+    namezh: "健身记录 App",
+    description: "A web app for recording your workouts",
+    descriptionzh: "用于记录健身及其定位的app",
+    tags: [
+      {
+        name: "TypeScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Leaflet",
+        color: "green-text-gradient",
+      },
+    ],
+    image: workout,
+    source_code_link: "https://github.com/Ashes814/workout-react-ts",
+  },
+  {
+    name: "Typhoon Monitor",
+    namezh: "台风梅花监控系统",
+    description: "A demo for Typhoon Monitor, designed for geography class",
+    descriptionzh: "台风监控系统示例，用于地理课堂教学",
+    tags: [
+      {
+        name: "echarts",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "responsive",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: typhoon,
+    source_code_link: "https://typhoon-meihua-monitor.netlify.app",
+  },
+  {
+    name: "OO Bankist",
+    namezh: "欧欧银行家",
+    description: "A demo for bank accounts",
+    descriptionzh: "银行账户系统的示例",
+    tags: [
+      {
+        name: "HTML5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ES6",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: bankist,
+    source_code_link: "https://github.com/Ashes814/oo-bankist/",
+  },
+  {
+    name: "Hambuger Order",
+    namezh: "汉堡到家",
+    description:
+      "A demo for ordering hambuger in Mobile, an imitation of McDonalds",
+    descriptionzh: "汉堡订餐购物车系统示例，模仿麦当劳点餐系统",
+    tags: [
+      {
+        name: "HTML5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ES6",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: bankist,
+    source_code_link: "https://github.com/Ashes814/oo-bankist/",
   },
 ];
 

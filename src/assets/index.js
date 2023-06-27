@@ -32,6 +32,9 @@ import shnu from "./company/shnu.png";
 import ominifood from "./ominifood.png";
 import guessingNumber from "./guessing-number.png";
 import pigGame from "./piggame.png";
+import workout from "./workout.png";
+import typhoon from "./typhoon.png";
+import bankist from "./bankist.png";
 
 export {
   logo,
@@ -65,4 +68,7 @@ export {
   ominifood,
   guessingNumber,
   pigGame,
+  workout,
+  typhoon,
+  bankist,
 };

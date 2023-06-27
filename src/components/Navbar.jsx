@@ -26,7 +26,7 @@ const Navbar = (props) => {
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             ZOW &nbsp;
             <span className="sm:block hidden">
-              | {isEnglish ? "GISer with Creative" : "GISer 有创造力"}
+              | {isEnglish ? "GISer with Creative" : "充满想象力的GISer"}
             </span>
           </p>
         </Link>

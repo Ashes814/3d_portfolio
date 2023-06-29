@@ -38,6 +38,7 @@ import bankist from "./bankist.png";
 import hambuger from "./hambuger.png";
 import smartCampus from "./smartCampus.png";
 import financial from "./financial.png";
+import tank from "./tank.png";
 
 export {
   logo,
@@ -77,4 +78,5 @@ export {
   hambuger,
   smartCampus,
   financial,
+  tank,
 };

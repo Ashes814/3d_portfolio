@@ -26,6 +26,7 @@ import {
   hambuger,
   smartCampus,
   financial,
+  tank,
   threejs,
   java,
   pgsql,
@@ -158,8 +159,14 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 2022 - August 2023",
     datezh: "2022年3月 - 2023年8月",
-    points: ["Research on Environmatal Science", "2", "3", "4"],
-    pointszh: ["Research on Environmatal Science", "2", "3", "4"],
+    points: [
+      "Implement GIS on Environmatal Science Research",
+      "Publishing On Top Journal As Fisrt Author",
+    ],
+    pointszh: [
+      "将GIS工具应用于环境科学研究",
+      "以第一作者身份在Top期刊中发表论文",
+    ],
   },
   {
     title: "Geographic Data Analyst",
@@ -171,16 +178,16 @@ const experiences = [
     date: "September 2021 - Feburary 2022",
     datezh: "2021年9月 - 2022年2月",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created thematic maps of the automotive sales network with QGIS.",
+      "Developed scripts to process spatial data with Pyqgis.",
+      "Managed GeoDatabase of automotive sales network with Python and SQL.",
+      "Crawled information from different websites related to automotive sales networks with scrapy.",
     ],
     pointszh: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "利用QGIS制作汽车销售网络地图",
+      "利用PyQgis开发地理处理脚本，将空间数据处理时间缩短近一半",
+      "通过Python与SQL管理空间数据库，建立汽车经销商网点地址数据库",
+      "设计自动化脚本每月爬取汽车经销商网点数据，并进行数据清洗，形成高时空分辨率汽车销售网络数据",
     ],
   },
   {
@@ -434,6 +441,21 @@ const projects = [
     ],
     image: financial,
     source_code_link: "https://github.com/Ashes814/finiancial-management",
+  },
+  {
+    name: "Tank Game",
+    namezh: "坦克大战游戏",
+    description: "Tank Game with Java, OOP, MultiThreads, IO Stream",
+    descriptionzh: "利用Java编写的坦克大战小游戏，应用多线程，面向对象及IO流",
+    tags: [
+      {
+        name: "Java",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tank,
+    source_code_link:
+      "https://github.com/Ashes814/hsp-JAVA-basic/tree/main/tank90",
   },
 ];
 

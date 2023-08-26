@@ -39,6 +39,7 @@ import hambuger from "./hambuger.png";
 import smartCampus from "./smartCampus.png";
 import financial from "./financial.png";
 import tank from "./tank.png";
+import smartCity from "./smartCity.png";
 
 export {
   logo,
@@ -79,4 +80,5 @@ export {
   smartCampus,
   financial,
   tank,
+  smartCity,
 };

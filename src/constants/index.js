@@ -27,6 +27,7 @@ import {
   smartCampus,
   financial,
   tank,
+  smartCity,
   threejs,
   java,
   pgsql,
@@ -456,6 +457,33 @@ const projects = [
     image: tank,
     source_code_link:
       "https://github.com/Ashes814/hsp-JAVA-basic/tree/main/tank90",
+  },
+  {
+    name: "Smart City Visualization",
+    namezh: "智慧城市可视化项目",
+    description:
+      "WebApp for city scenes visualization, Querying and Spatial Analysis",
+    descriptionzh: "主要功能有城市场景可视化,城市信息查询以及空间分析模块",
+    tags: [
+      {
+        name: "Geoserver",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Mapbox + L7",
+        color: "green-text-gradient",
+      },
+    ],
+    image: smartCity,
+    source_code_link: "https://github.com/Ashes814/smart-city",
   },
 ];
 

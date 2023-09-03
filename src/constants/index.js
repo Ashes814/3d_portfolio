@@ -59,7 +59,7 @@ const services = [
     title: "WeChat Official Account",
     titlezh: "微信公众号（欧欧GIS日记）",
     icon: web,
-    link: "https://www.baidu.com/",
+    link: "https://mp.weixin.qq.com/s?__biz=Mzg4OTU0NTg5OA==&mid=2247483717&idx=1&sn=5212ceaefd2c4fd4dc73560204a202de&chksm=cfeb7480f89cfd962a50dd9190b6016bbbbdab8890d4964b8ad158cb6f36dc2cf88c2b0829f9&token=545713844&lang=zh_CN#rd",
   },
   {
     title: "Notion Blog",

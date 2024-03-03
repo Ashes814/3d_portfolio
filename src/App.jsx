@@ -21,10 +21,11 @@ const App = () => {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
           <Hero isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+          <Tech isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
         </div>
-        <About isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-        <Experience isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-        <Tech isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+        {/* <About isEnglish={isEnglish} setIsEnglish={setIsEnglish} /> */}
+        {/* <Experience isEnglish={isEnglish} setIsEnglish={setIsEnglish} /> */}
+
         <Works isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
         <Feedbacks isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
         <div className="relative z-0">

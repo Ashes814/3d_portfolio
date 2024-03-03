@@ -40,7 +40,7 @@ const Navbar = (props) => {
                   setActive(Link.title);
                 }}
               >
-                <a href={`#${Link.id}`}>
+                <a href={`${Link.url}`} target="_blank">
                   {isEnglish ? Link.title : Link.titlezh}
                 </a>
               </li>

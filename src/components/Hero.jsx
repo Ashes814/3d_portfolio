@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Tech } from "../components";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 const Hero = (props) => {
   const { isEnglish, setIsEnglish } = props;
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-96 mx-auto mb-16">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -24,21 +25,22 @@ const Hero = (props) => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {isEnglish
-              ? "I develop WebGIS App with JS/TS, React, and Cesium."
+              ? "I am a MSc Student in GIS."
               : "我是一名WebGIS开发者，常用JS/TS，React与Cesium开发有趣的三维GIS项目，同时兼任"}
             <br className="sm:block hidden" />
             {isEnglish
-              ? "Maintaing Database with Java."
-              : "JAVA增删改查工程师😕"}
+              ? "My research interests include Spatial Big Data, GeoAI, Tourism, Human Mobility, and Environmental Science."
+              : "我是一名WebGIS开发者，常用JS/TS，React与Cesium开发有趣的三维GIS项目，同时兼任"}
             <br className="sm:block hidden" />
             {isEnglish
-              ? "Implementing Spatial Analysis and Machine Learning with Python."
-              : "Python调包侠🥹"}
+              ? "I also worked as a GIS developer. Building GIS apps with React & Java."
+              : "我是一名WebGIS开发者，常用JS/TS，React与Cesium开发有趣的三维GIS项目，同时兼任"}
           </p>
         </div>
       </div>
-      <ComputersCanvas />
-      <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
+
+      {/* <ComputersCanvas /> */}
+      {/* <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.dev
@@ -54,7 +56,7 @@ const Hero = (props) => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

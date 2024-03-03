@@ -39,18 +39,21 @@ import {
 export const navLinks = [
   {
     id: "career",
-    title: "Career",
+    title: "CV",
     titlezh: "生涯路径",
+    url: "https://github.com/Ashes814",
   },
   {
     id: "work",
-    title: "Projects",
+    title: "GitHub",
     titlezh: "项目作品",
+    url: "https://github.com/Ashes814",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Google Scholar",
     titlezh: "联系方式",
+    url: "https://scholar.google.com/citations?user=t0p2VIYAAAAJ&hl=zh-CN&oi=ao",
   },
 ];
 
@@ -61,7 +64,7 @@ const services = [
     icon: web,
     link: "https://mp.weixin.qq.com/s?__biz=Mzg4OTU0NTg5OA==&mid=2247483717&idx=1&sn=5212ceaefd2c4fd4dc73560204a202de&chksm=cfeb7480f89cfd962a50dd9190b6016bbbbdab8890d4964b8ad158cb6f36dc2cf88c2b0829f9&token=545713844&lang=zh_CN#rd",
   },
-  {t 
+  {
     title: "Notion Blog",
     titlezh: "Notion博客",
     icon: mobile,
@@ -74,10 +77,10 @@ const services = [
     link: "https://github.com/Ashes814",
   },
   {
-    title: "Content Creator",
-    titlezh: "待定",
+    title: "Google Scholar",
+    titlezh: "谷歌学术",
     icon: creator,
-    link: "https://www.baidu.com/",
+    link: "https://scholar.google.com/citations?user=t0p2VIYAAAAJ&hl=zh-CN&oi=ao",
   },
 ];
 

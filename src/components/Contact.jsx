@@ -110,7 +110,7 @@ const Contact = (props) => {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="Jack"
+                placeholder="Please enter your name."
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
@@ -123,7 +123,7 @@ const Contact = (props) => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="1223133@gamil.com"
+                placeholder="Please enter your name."
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
@@ -136,7 +136,7 @@ const Contact = (props) => {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="BalaBala..."
+                placeholder="Please enter your messge."
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
